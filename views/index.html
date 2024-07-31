@@ -1,32 +1,31 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <title>URL Shortener Microservice | freeCodeCamp.org</title>
-    <link
-      rel="icon"
-      type="image/png"
-      href="https://cdn.freecodecamp.org/universal/favicons/favicon-16x16.png"
-    />
-    <link href="/public/style.css" rel="stylesheet" type="text/css" />
-  </head>
 
-  <body>
-    <h1>URL Shortener Microservice</h1>
-    <main>
-      <section>
-        <form action="api/shorturl" method="POST">
-          <fieldset>
-            <legend>URL Shortener</legend>
-            <label for="url_input">URL:</label>
-            <input id="url_input" type="text" name="url" placeholder="https://www.freecodecamp.org/" />
-            <input type="submit" value="POST URL" />
-          </fieldset>
-        </form>
-      </section>
-    </main>
-    <footer>
-      <p>By <a href="https://www.freecodecamp.org/">freeCodeCamp</a></p>
-    </footer>
-  </body>
+<head>
+  <title>URL Shortener Microservice | freeCodeCamp.org</title>
+  <link rel="icon" type="image/png" href="https://cdn.freecodecamp.org/universal/favicons/favicon-16x16.png" />
+  <link href="/public/style.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100"></body>
+  <h1 class="text-4xl text-center mt-8">URL Shortener Microservice</h1>
+  <main class="max-w-lg mx-auto mt-8"></main>
+    <section>
+      <form action="api/shorturl" method="POST" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <fieldset>
+          <legend class="text-lg font-bold">URL Shortener</legend>
+          <label for="url_input" class="block text-gray-700 text-sm font-bold mb-2">URL:</label>
+          <input id="url_input" type="text" name="url" placeholder="https://www.freecodecamp.org/" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
+          <input type="submit" value="POST URL" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-4 rounded focus:outline-none focus:shadow-outline" />
+        </fieldset>
+      </form>
+    </section>
+  </main>
+  <footer class="text-center mt-8"></footer>
+    <p>By <a href="https://www.freecodecamp.org/">freeCodeCamp</a></p>
+  </footer>
+</body>
+
 </html>
